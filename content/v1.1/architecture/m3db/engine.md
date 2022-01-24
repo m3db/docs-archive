@@ -15,7 +15,7 @@ M3TSZ is used when values are floats. A variant of the streaming time series com
 
 ### Protobuf Encoding
 
-For more complex value types, M3DB also supports generic Protobuf messages with [a few exceptions](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/v1.1/encoding.md#supported-syntax). The algorithm takes on a hybrid approach and uses different compression schemes depending on the field types within the Protobuf message.
+For more complex value types, M3DB also supports generic Protobuf messages with [a few exceptions](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/encoding.md#supported-syntax). The algorithm takes on a hybrid approach and uses different compression schemes depending on the field types within the Protobuf message.
 
 Details on the encoding, marshaling and unmarshaling methods can be read [here](https://github.com/m3db/m3/tree/master/src/dbnode/encoding/proto).
 

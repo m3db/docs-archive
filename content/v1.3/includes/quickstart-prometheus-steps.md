@@ -14,7 +14,7 @@ prometheus --config.file=prometheus.yml
 
 #### Start Node Exporters
 
-The three commands below simulate three point of sale (POS) devices reporting an hourly sales total for the POS. The node_exporter textfile collector uses[ _.prom_ files](https://prometheus.io/docs/v1.3/instrumenting/exposition_formats/) for metrics, and only loads files from a directory, so this requires some extra steps for each node for this example.
+The three commands below simulate three point of sale (POS) devices reporting an hourly sales total for the POS. The node_exporter textfile collector uses[ _.prom_ files](https://prometheus.io/docs/instrumenting/exposition_formats/) for metrics, and only loads files from a directory, so this requires some extra steps for each node for this example.
 
 {{< tabs name="node_exporters" >}}
 {{< tab name="Node 1" >}}

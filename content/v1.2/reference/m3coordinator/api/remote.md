@@ -31,11 +31,11 @@ None.
 
 ### Data Params
 
-Binary [snappy compressed](http://google.github.io/snappy/) Prometheus [WriteRequest protobuf message](https://github.com/prometheus/prometheus/blob/10444e8b1dc69ffcddab93f09ba8dfa6a4a2fddb/prompb/remote.proto#L22-L24).
+Binary [snappy compressed](https://github.com/google/snappy) Prometheus [WriteRequest protobuf message](https://github.com/prometheus/prometheus/blob/10444e8b1dc69ffcddab93f09ba8dfa6a4a2fddb/prompb/remote.proto#L22-L24).
 
 ### Available Tuning Params
 
-Refer [here](https://prometheus.io/docs/v1.2/practices/remote_write/) for an up to date list of remote tuning parameters. 
+Refer [here](https://prometheus.io/docs/practices/remote_write/) for an up to date list of remote tuning parameters. 
 
 ### Sample Call
 
@@ -103,4 +103,4 @@ None.
 
 ### Data Params
 
-Binary [snappy compressed](http://google.github.io/snappy/) Prometheus [WriteRequest protobuf message](https://github.com/prometheus/prometheus/blob/10444e8b1dc69ffcddab93f09ba8dfa6a4a2fddb/prompb/remote.proto#L26-L28).
+Binary [snappy compressed](https://github.com/google/snappy) Prometheus [WriteRequest protobuf message](https://github.com/prometheus/prometheus/blob/10444e8b1dc69ffcddab93f09ba8dfa6a4a2fddb/prompb/remote.proto#L26-L28).

@@ -43,4 +43,4 @@ with name `$CLUSTER`, the keys are:
 - `_sd.placement/$NS/$CLUSTER/m3db`
 - `_kv/$NS/$CLUSTER/m3db.node.namespaces`
 
-[finalizers]: https://kubernetes.io/docs/v1.2/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#finalizers
+[finalizers]: https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/

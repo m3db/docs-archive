@@ -84,5 +84,5 @@ Each M3DB node has a health endpoint, which you can query via HTTP: `curl localh
 {"ok":true,"status":"up","bootstrapped":true}`. There are also metrics for failed requests (e.g. query timeouts). 
 
 - **How do I understand a metric type?**
-For Prometheus metrics, visit their site for [documentation of metric types](https://prometheus.io/docs/v1.2/concepts/metric_types/#metric-types). 
+For Prometheus metrics, visit their site for [documentation of metric types](https://prometheus.io/docs/concepts/metric_types/#metric-types). 
 

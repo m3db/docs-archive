@@ -17,7 +17,7 @@ tracing:
         # for options
         ...
 
-Jaeger can be run locally with docker as described in https://www.jaegertracing.io/docs/v1.2/1.9/getting-started/.
+Jaeger can be run locally with docker as described in https://www.jaegertracing.io/docs/1.9/getting-started/.
 
 The default configuration will report traces via udp to localhost:6831; using the all-in-one jaeger container, they will be accessible at
 http://localhost:16686

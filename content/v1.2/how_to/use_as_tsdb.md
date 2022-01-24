@@ -62,9 +62,9 @@ message VehicleLocation {
 }
 ```
 
-While M3DB strives to support the entire [proto3 language spec](https://developers.google.com/protocol-buffers/docs/v1.2/proto3), only [the following features are currently supported](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/v1.2/encoding.md):
+While M3DB strives to support the entire [proto3 language spec](https://developers.google.com/protocol-buffers/docs/proto3), only [the following features are currently supported](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/encoding.md):
 
-1.  [Scalar values](https://developers.google.com/protocol-buffers/docs/v1.2/proto3#scalar)
+1.  [Scalar values](https://developers.google.com/protocol-buffers/docs/proto3#scalar)
 2.  Nested messages
 3.  Repeated fields
 4.  Map fields
@@ -73,7 +73,7 @@ While M3DB strives to support the entire [proto3 language spec](https://develope
 The following features are currently not supported:
 
 1.  `Any` fields
-2.  [`Oneof` fields](https://developers.google.com/protocol-buffers/docs/v1.2/proto#oneof)
+2.  [`Oneof` fields](https://developers.google.com/protocol-buffers/docs/proto#oneof)
 3.  Options of any type
 4.  Custom field types
 
@@ -108,7 +108,7 @@ message VehicleLocation {
 
 While the latter schema is valid, the attributes field will not be compressed; users should weigh the tradeoffs between more expressive schema and better compression for each use case.
 
-For more details on the compression scheme and its limitations, review [the documentation for M3DB's compressed Protobuf encoding](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/v1.2/encoding.md).
+For more details on the compression scheme and its limitations, review [the documentation for M3DB's compressed Protobuf encoding](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/encoding.md).
 
 ### Getting Started
 

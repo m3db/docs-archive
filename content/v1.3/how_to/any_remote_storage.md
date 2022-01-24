@@ -5,7 +5,7 @@ title: "M3 Aggregation for any Prometheus remote write storage"
 ### Prometheus Remote Write
 
 As mentioned in our integrations guide, M3 Coordinator and M3 Aggregator can be configured to write to any 
-[Prometheus Remote Write](https://prometheus.io/docs/v1.3/prometheus/latest/configuration/configuration/#remote_write) receiver.
+[Prometheus Remote Write](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#remote_write) receiver.
 
 ### Sidecar M3 Coordinator setup
 

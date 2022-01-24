@@ -85,7 +85,7 @@ Read the [placement configuration guide](/docs/v1.3/operational_guide/placement_
 
 ### Writing Metrics
 
-M3 supports ingesting [statsd](https://github.com/statsd/statsd#usage) and [Prometheus](https://prometheus.io/docs/v1.3/concepts/data_model/) formatted metrics.
+M3 supports ingesting [statsd](https://github.com/statsd/statsd#usage) and [Prometheus](https://prometheus.io/docs/concepts/data_model/) formatted metrics.
 
 This quickstart focuses on Prometheus metrics which consist of a value, a timestamp, and tags to bring context and meaning to the metric.
 
@@ -105,7 +105,7 @@ The examples below use `__name__` as the name for one of the tags, which is a Pr
 {{% /notice %}}
 
 {{% notice tip %}}
-Label names may contain ASCII letters, numbers, underscores, and Unicode characters. They must match the regex `[a-zA-Z_][a-zA-Z0-9_]*`. Label names beginning with `__` are reserved for internal use. [Read more in the Prometheus documentation](https://prometheus.io/docs/v1.3/concepts/data_model/#metric-names-and-labels).
+Label names may contain ASCII letters, numbers, underscores, and Unicode characters. They must match the regex `[a-zA-Z_][a-zA-Z0-9_]*`. Label names beginning with `__` are reserved for internal use. [Read more in the Prometheus documentation](https://prometheus.io/docs/concepts/data_model/#metric-names-and-labels).
 {{% /notice %}}
 
 {{< tabs name="write_metrics" >}}
@@ -130,7 +130,7 @@ Label names may contain ASCII letters, numbers, underscores, and Unicode charact
 
 M3 supports three query engines: Prometheus (default), Graphite, and the M3 Query Engine.
 
-This quickstart uses Prometheus as the query engine, and you have access to [all the features of PromQL queries](https://prometheus.io/docs/v1.3/prometheus/latest/querying/basics/).
+This quickstart uses Prometheus as the query engine, and you have access to [all the features of PromQL queries](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 
 To query metrics, use the _{{% apiendpoint %}}query_range_ endpoint with the following data in the request body, all fields are required:
 

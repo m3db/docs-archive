@@ -34,4 +34,4 @@ For production use cases, we recommend running etcd (in order of preference):
 [etcd]: https://etcd.io
 [etcd-example]: https://github.com/m3db/m3db-operator/tree/master/example/etcd
 [etcd-operator]: https://github.com/coreos/etcd-operator
-[gke-regional]: https://cloud.google.com/kubernetes-engine/docs/v1.2/concepts/regional-clusters
+[gke-regional]: https://cloud.google.com/kubernetes-engine/docs/concepts/regional-clusters

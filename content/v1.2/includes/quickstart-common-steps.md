@@ -267,7 +267,7 @@ Add `?debug=1` to the request to convert nano units in the output into standard 
 
 ### Writing Metrics
 
-M3 supports ingesting [statsd](https://github.com/statsd/statsd#usage) and [Prometheus](https://prometheus.io/docs/v1.2/concepts/data_model/) formatted metrics.
+M3 supports ingesting [statsd](https://github.com/statsd/statsd#usage) and [Prometheus](https://prometheus.io/docs/concepts/data_model/) formatted metrics.
 
 This quickstart focuses on Prometheus metrics which consist of a value, a timestamp, and tags to bring context and meaning to the metric.
 
@@ -293,7 +293,7 @@ You can write metrics using one of two endpoints:
 
 M3 supports three query engines: Prometheus (default), Graphite, and the M3 Query Engine.
 
-This quickstart uses Prometheus as the query engine, and you have access to [all the features of PromQL queries](https://prometheus.io/docs/v1.2/prometheus/latest/querying/basics/).
+This quickstart uses Prometheus as the query engine, and you have access to [all the features of PromQL queries](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 
 To query metrics, use the _{{% apiendpoint %}}query_range_ endpoint with the following data in the request body, all fields are required:
 
