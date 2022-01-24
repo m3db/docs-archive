@@ -6,13 +6,13 @@ title: Using M3DB as a general purpose time series database
 
 ## Overview
 
-M3 has native integrations that make it particularly easy to use it as a metrics storage for [Prometheus](/docs/integrations/prometheus) and [Graphite](/docs/integrations/graphite). M3DB can also be used as a general purpose distributed time series database by itself.
+M3 has native integrations that make it particularly easy to use it as a metrics storage for [Prometheus](/docs/v1.3/integrations/prometheus) and [Graphite](/docs/v1.3/integrations/graphite). M3DB can also be used as a general purpose distributed time series database by itself.
 
 ## Data Model
 
 ### IDs and Tags
 
-M3DB's data model allows multiple namespaces, each of which can be [configured and tuned independently](/docs/operational_guide/namespace_configuration).
+M3DB's data model allows multiple namespaces, each of which can be [configured and tuned independently](/docs/v1.3/operational_guide/namespace_configuration).
 
 Each namespace can also be configured with its own schema (see "Schema Modeling" section below).
 
@@ -62,9 +62,9 @@ message VehicleLocation {
 }
 ```
 
-While M3DB strives to support the entire [proto3 language spec](https://developers.google.com/protocol-buffers/docs/proto3), only [the following features are currently supported](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/encoding.md):
+While M3DB strives to support the entire [proto3 language spec](https://developers.google.com/protocol-buffers/docs/v1.3/proto3), only [the following features are currently supported](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/v1.3/encoding.md):
 
-1.  [Scalar values](https://developers.google.com/protocol-buffers/docs/proto3#scalar)
+1.  [Scalar values](https://developers.google.com/protocol-buffers/docs/v1.3/proto3#scalar)
 2.  Nested messages
 3.  Repeated fields
 4.  Map fields
@@ -73,7 +73,7 @@ While M3DB strives to support the entire [proto3 language spec](https://develope
 The following features are currently not supported:
 
 1.  `Any` fields
-2.  [`Oneof` fields](https://developers.google.com/protocol-buffers/docs/proto#oneof)
+2.  [`Oneof` fields](https://developers.google.com/protocol-buffers/docs/v1.3/proto#oneof)
 3.  Options of any type
 4.  Custom field types
 
@@ -108,13 +108,13 @@ message VehicleLocation {
 
 While the latter schema is valid, the attributes field will not be compressed; users should weigh the tradeoffs between more expressive schema and better compression for each use case.
 
-For more details on the compression scheme and its limitations, review [the documentation for M3DB's compressed Protobuf encoding](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/encoding.md).
+For more details on the compression scheme and its limitations, review [the documentation for M3DB's compressed Protobuf encoding](https://github.com/m3db/m3/blob/master/src/dbnode/encoding/proto/docs/v1.3/encoding.md).
 
 ### Getting Started
 
 #### M3DB setup
 
-For more advanced setups, it's best to follow the guides on how to configure an M3DB cluster [manually](/docs/cluster/binaries_cluster) or [using Kubernetes](/docs/cluster/kubernetes_cluster). However, this tutorial will walk you through configuring a single node setup locally for development.
+For more advanced setups, it's best to follow the guides on how to configure an M3DB cluster [manually](/docs/v1.3/cluster/binaries_cluster) or [using Kubernetes](/docs/v1.3/cluster/kubernetes_cluster). However, this tutorial will walk you through configuring a single node setup locally for development.
 
 First, run the following command to pull the latest M3DB image:
 

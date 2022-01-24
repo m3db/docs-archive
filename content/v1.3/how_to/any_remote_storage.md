@@ -5,7 +5,7 @@ title: "M3 Aggregation for any Prometheus remote write storage"
 ### Prometheus Remote Write
 
 As mentioned in our integrations guide, M3 Coordinator and M3 Aggregator can be configured to write to any 
-[Prometheus Remote Write](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#remote_write) receiver.
+[Prometheus Remote Write](https://prometheus.io/docs/v1.3/prometheus/latest/configuration/configuration/#remote_write) receiver.
 
 ### Sidecar M3 Coordinator setup
 
@@ -171,7 +171,7 @@ The best documentation is to follow the official [etcd docs](https://github.com/
 
 **Run a M3 Coordinator in Admin mode**
 
-Refer to [Running M3 Coordinator in Admin mode](/docs/how_to/m3coordinator_admin).
+Refer to [Running M3 Coordinator in Admin mode](/docs/v1.3/how_to/m3coordinator_admin).
 
 **Configure Remote Write Endpoints**
 
@@ -211,7 +211,7 @@ prometheusRemoteBackend:
 
 **Configure Remote M3 Aggregator**
 
-Refer to [Aggregate Metrics with M3 Aggregator](/docs/how_to/m3aggregator) on details how to setup M3 Coordinator with Remote M3 Aggregator.
+Refer to [Aggregate Metrics with M3 Aggregator](/docs/v1.3/how_to/m3aggregator) on details how to setup M3 Coordinator with Remote M3 Aggregator.
 
 For administrative operations when configuring topology use M3 Coordinator Admin address from previous step.
 

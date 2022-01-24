@@ -16,22 +16,22 @@ other supporting infrastructure.
 
 M3 has several features, provided as discrete components, which make it an ideal platform for time series data at scale:
 
--   A distributed time series database, [M3DB](/docs/reference/m3db/), that provides scalable storage for time series data and a reverse index.
--   A sidecar process, [M3Coordinator](/docs/integrations/prometheus), that allows M3DB to act as the long-term storage for Prometheus.
--   A distributed query engine, [M3Query](/docs/reference/m3query), with native support for PromQL and Graphite (M3QL coming soon).
+-   A distributed time series database, [M3DB](/docs/v1.1/reference/m3db/), that provides scalable storage for time series data and a reverse index.
+-   A sidecar process, [M3Coordinator](/docs/v1.1/integrations/prometheus), that allows M3DB to act as the long-term storage for Prometheus.
+-   A distributed query engine, [M3Query](/docs/v1.1/reference/m3query), with native support for PromQL and Graphite (M3QL coming soon).
     <!-- Add M3Aggregator link -->
 -   An aggregation tier, M3Aggregator, that runs as a dedicated metrics aggregator/downsampler allowing metrics to be stored at various retentions at different resolutions.
 
 ## Getting Started
 
-**Note:** Make sure to read our [Operational Guides](/docs/operational_guide) before running in production!
+**Note:** Make sure to read our [Operational Guides](/docs/v1.1/operational_guide) before running in production!
 
 Getting started with M3 is as easy as following one of the How-To guides.
 
--   [Single M3DB node deployment](/docs/quickstart)
--   [Clustered M3DB deployment](/docs/cluster)
--   [M3DB on Kubernetes](/docs/operator)
--   [Isolated M3Query on deployment](/docs/how_to/m3query)
+-   [Single M3DB node deployment](/docs/v1.1/quickstart)
+-   [Clustered M3DB deployment](/docs/v1.1/cluster)
+-   [M3DB on Kubernetes](/docs/v1.1/operator)
+-   [Isolated M3Query on deployment](/docs/v1.1/how_to/m3query)
 
 ## Support
 

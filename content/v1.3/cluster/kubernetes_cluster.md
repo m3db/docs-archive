@@ -7,11 +7,11 @@ weight: 1
 This guide shows you how to create an M3 cluster of 3 nodes, designed to run locally on the same machine. It is designed to show you how M3 and Kubernetes can work together, but not as a production example.
 
 {{% notice note %}}
-This guide assumes you have read the [quickstart](/docs/quickstart/docker), and builds upon the concepts in that guide.
+This guide assumes you have read the [quickstart](/docs/v1.3/quickstart/docker), and builds upon the concepts in that guide.
 {{% /notice %}}
 
 {{% notice tip %}}
-We recommend you use [our Kubernetes operator](/docs/operator/operator) to deploy M3 to a cluster. It is a more streamlined setup that uses [custom resource definitions](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) to automatically handle operations such as managing cluster placements.
+We recommend you use [our Kubernetes operator](/docs/v1.3/operator/operator) to deploy M3 to a cluster. It is a more streamlined setup that uses [custom resource definitions](https://kubernetes.io/docs/v1.3/concepts/extend-kubernetes/api-extension/custom-resources/) to automatically handle operations such as managing cluster placements.
 {{% /notice %}}
 
 {{< fileinclude file="cluster-architecture.md" >}}
@@ -19,7 +19,7 @@ We recommend you use [our Kubernetes operator](/docs/operator/operator) to deplo
 ## Prerequisites
 
 -   A running Kubernetes cluster.
-    -   For local testing, you can use [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/), [Docker desktop](https://www.docker.com/products/docker-desktop), or [we have a script](https://raw.githubusercontent.com/m3db/m3db-operator/master/scripts/kind-create-cluster.sh) you can use to start a 3 node cluster with [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/).
+    -   For local testing, you can use [minikube](https://kubernetes.io/docs/v1.3/tasks/tools/install-minikube/), [Docker desktop](https://www.docker.com/products/docker-desktop), or [we have a script](https://raw.githubusercontent.com/m3db/m3db-operator/master/scripts/kind-create-cluster.sh) you can use to start a 3 node cluster with [Kind](https://kind.sigs.k8s.io/docs/v1.3/user/quick-start/).
 
 {{% notice note %}}
 The rest of this guide uses minikube, you may need to change some of the steps to suit your local cluster.
@@ -84,7 +84,7 @@ Delete the M3 cluster using kubectl:
 kubectl delete m3dbcluster simple-cluster
 ```
 
-By default, the operator uses [finalizers](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers) to delete the placement and namespaces associated with a cluster before the custom resources. If you do not want this behavior, set `keepEtcdDataOnDelete` to `true` in the cluster configuration.
+By default, the operator uses [finalizers](https://kubernetes.io/docs/v1.3/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers) to delete the placement and namespaces associated with a cluster before the custom resources. If you do not want this behavior, set `keepEtcdDataOnDelete` to `true` in the cluster configuration.
 
 <!-- TODO: Placement, same as Binaries? -->
 
@@ -110,7 +110,7 @@ For example, if the cluster placement states that node A owns shards 1, 2, and 3
 
 This quickstart uses the _{{% apiendpoint %}}database/create_ endpoint that creates a namespace, and the placement if it doesn't already exist based on the `type` argument.
 
-You can create [placements](/docs/operational_guide/placement_configuration/) and [namespaces](/docs/operational_guide/namespace_configuration/#advanced-hard-way) separately if you need more control over their settings.
+You can create [placements](/docs/v1.3/operational_guide/placement_configuration/) and [namespaces](/docs/v1.3/operational_guide/namespace_configuration/#advanced-hard-way) separately if you need more control over their settings.
 
 In another terminal, use the following command.
 
@@ -276,7 +276,7 @@ curl {{% apiendpoint %}}services/m3db/placement | jq .
 {{< /tabs >}}
 
 {{% notice tip %}}
-[Read more about the bootstrapping process](/docs/operational_guide/bootstrapping_crash_recovery/).
+[Read more about the bootstrapping process](/docs/v1.3/operational_guide/bootstrapping_crash_recovery/).
 {{% /notice %}}
 
 {{< fileinclude file="cluster-common-steps.md" >}}

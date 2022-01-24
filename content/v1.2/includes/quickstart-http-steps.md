@@ -9,7 +9,7 @@ The examples below use `__name__` as the name for one of the tags, which is a Pr
 {{% /notice %}}
 
 {{% notice tip %}}
-Label names may contain ASCII letters, numbers, underscores, and Unicode characters. They must match the regex `[a-zA-Z_][a-zA-Z0-9_]*`. Label names beginning with `__` are reserved for internal use. [Read more in the Prometheus documentation](https://prometheus.io/docs/concepts/data_model/#metric-names-and-labels).
+Label names may contain ASCII letters, numbers, underscores, and Unicode characters. They must match the regex `[a-zA-Z_][a-zA-Z0-9_]*`. Label names beginning with `__` are reserved for internal use. [Read more in the Prometheus documentation](https://prometheus.io/docs/v1.2/concepts/data_model/#metric-names-and-labels).
 {{% /notice %}}
 
 {{< tabs name="write_metrics" >}}

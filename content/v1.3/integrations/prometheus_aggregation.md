@@ -50,4 +50,4 @@ prometheusRemoteBackend:
 
 ## More advanced deployments
 
-Refer to the [M3 Aggregation for any Prometheus remote write storage](/docs/how_to/any_remote_storage) for more details on more advanced deployment options.
+Refer to the [M3 Aggregation for any Prometheus remote write storage](/docs/v1.3/how_to/any_remote_storage) for more details on more advanced deployment options.

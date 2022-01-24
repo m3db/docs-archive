@@ -7,7 +7,7 @@ weight: 1
 This guide shows how to install and configure M3, create a single-node cluster, and read and write metrics to it.
 
 {{% notice warning %}}
-Deploying a single-node cluster is a great way to experiment with M3 and get an idea of what it has to offer, but isn't designed for production use. To run M3 in clustered mode with a separate M3 Coordinator, [read the clustered mode guides](/docs/cluster/).
+Deploying a single-node cluster is a great way to experiment with M3 and get an idea of what it has to offer, but isn't designed for production use. To run M3 in clustered mode with a separate M3 Coordinator, [read the clustered mode guides](/docs/v1.3/cluster/).
 {{% /notice %}}
 
 ## Prerequisites
@@ -65,7 +65,7 @@ The file groups configuration into `coordinator` or `db` sections that represent
 <!-- TODO: Replicate relevant sections -->
 
 {{% notice tip %}}
-You can find more information on configuring M3 in the [operational guides section](/docs/operational_guide/).
+You can find more information on configuring M3 in the [operational guides section](/docs/v1.3/operational_guide/).
 {{% /notice %}}
 
 {{< fileinclude file="quickstart-common-steps.md" >}}

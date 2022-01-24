@@ -368,7 +368,7 @@ downsample:
       # String separated label name to label value glob patterns to filter the mapping rule
       filter: <string>
       # Aggregations to apply to the set of metrics
-      # Read https://m3db.io/docs/operational_guide/mapping_rollup/ for full list
+      # Read https://m3db.io/docs/v1.2/operational_guide/mapping_rollup/ for full list
       aggregations: <array_of_strings>
       # Retention/resolution storage policies to keep matched metrics
       storagePolicies:
@@ -394,15 +394,15 @@ downsample:
           # Set of labels to group by, only these remain on the new metric name produced by the rollup operation
           groupBy: <array_of_strings>
           # Aggregations to apply to the set of metrics
-          # Read https://m3db.io/docs/operational_guide/mapping_rollup/ for full list
+          # Read https://m3db.io/docs/v1.2/operational_guide/mapping_rollup/ for full list
           aggregations: <array_of_strings>
         # Aggregation operation type
         aggregate:
-          # Read https://m3db.io/docs/operational_guide/mapping_rollup/ for full list
+          # Read https://m3db.io/docs/v1.2/operational_guide/mapping_rollup/ for full list
           type: <string>
         # Transform operation type
         transform:
-          # Read https://m3db.io/docs/operational_guide/mapping_rollup/ for full list
+          # Read https://m3db.io/docs/v1.2/operational_guide/mapping_rollup/ for full list
           type: <string>
       # Retention/resolution storage policies to keep matched metrics
       storagePolicies:

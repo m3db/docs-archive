@@ -81,7 +81,7 @@ config:
 
 ### Embedded etcd
 
-If you're running `M3DB seed nodes` with embedded `etcd` (which we do not recommend for production workloads) and need to perform a node add/replace/remove then follow our [placement configuration guide](/docs/operational_guide/placement_configuration) and pay special attention to follow the special instructions for `seed nodes`.
+If you're running `M3DB seed nodes` with embedded `etcd` (which we do not recommend for production workloads) and need to perform a node add/replace/remove then follow our [placement configuration guide](/docs/v1.1/operational_guide/placement_configuration) and pay special attention to follow the special instructions for `seed nodes`.
 
 ### External etcd
 

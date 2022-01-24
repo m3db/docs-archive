@@ -30,7 +30,7 @@ tracing:
 ```
 
 Jaeger can be run locally with docker as described in
-https://www.jaegertracing.io/docs/1.9/getting-started/.
+https://www.jaegertracing.io/docs/v1.1/1.9/getting-started/.
 
 The default configuration will report traces via udp to localhost:6831;
 using the all-in-one jaeger container, they will be accessible at
@@ -39,7 +39,7 @@ http://localhost:16686
 
 N.B.: for production workloads, you will almost certainly want to use
 sampler.type=remote with
-[adaptive sampling](https://www.jaegertracing.io/docs/1.10/sampling/#adaptive-sampler)
+[adaptive sampling](https://www.jaegertracing.io/docs/v1.1/1.10/sampling/#adaptive-sampler)
 for Jaeger, as write volumes are likely orders of magnitude higher than
 read volumes in most timeseries systems.
 
@@ -77,7 +77,7 @@ and we'll work with you to make it happen!
 ### Use cases
 
 Note: all URLs assume a local jaeger setup as described in Jaeger's
-[docs](https://www.jaegertracing.io/docs/1.9/getting-started/).
+[docs](https://www.jaegertracing.io/docs/v1.1/1.9/getting-started/).
 
 
 #### Finding slow queries

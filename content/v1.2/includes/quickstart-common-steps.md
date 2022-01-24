@@ -19,7 +19,7 @@ For example, if the cluster placement states that node A owns shards 1, 2, and 3
 
 This quickstart uses the _{{% apiendpoint %}}database/create_ endpoint that creates a namespace, and the placement if it doesn't already exist based on the `type` argument.
 
-You can create [placements](/docs/operational_guide/placement_configuration/) and [namespaces](/docs/operational_guide/namespace_configuration/#advanced-hard-way) separately if you need more control over their settings.
+You can create [placements](/docs/v1.2/operational_guide/placement_configuration/) and [namespaces](/docs/v1.2/operational_guide/namespace_configuration/#advanced-hard-way) separately if you need more control over their settings.
 
 In another terminal, use the following command.
 
@@ -185,7 +185,7 @@ curl {{% apiendpoint %}}services/m3db/placement | jq .
 {{< /tabs >}}
 
 {{% notice tip %}}
-[Read more about the bootstrapping process](/docs/operational_guide/bootstrapping_crash_recovery/).
+[Read more about the bootstrapping process](/docs/v1.2/operational_guide/bootstrapping_crash_recovery/).
 {{% /notice %}}
 
 ### Ready a Namespace
@@ -267,13 +267,13 @@ Add `?debug=1` to the request to convert nano units in the output into standard 
 
 ### Writing Metrics
 
-M3 supports ingesting [statsd](https://github.com/statsd/statsd#usage) and [Prometheus](https://prometheus.io/docs/concepts/data_model/) formatted metrics.
+M3 supports ingesting [statsd](https://github.com/statsd/statsd#usage) and [Prometheus](https://prometheus.io/docs/v1.2/concepts/data_model/) formatted metrics.
 
 This quickstart focuses on Prometheus metrics which consist of a value, a timestamp, and tags to bring context and meaning to the metric.
 
 You can write metrics using one of two endpoints:
 
--   _[{{% apiendpoint %}}prom/remote/write](/docs/reference/m3coordinator/api/remote/)_ - Write a Prometheus remote write query to M3DB with a binary snappy compressed Prometheus WriteRequest protobuf message.
+-   _[{{% apiendpoint %}}prom/remote/write](/docs/v1.2/reference/m3coordinator/api/remote/)_ - Write a Prometheus remote write query to M3DB with a binary snappy compressed Prometheus WriteRequest protobuf message.
 -   _{{% apiendpoint %}}json/write_ - Write a JSON payload of metrics data. This endpoint is quick for testing purposes but is not as performant for production usage.
 
 {{< tabs name="prom_http_write" >}}
@@ -293,7 +293,7 @@ You can write metrics using one of two endpoints:
 
 M3 supports three query engines: Prometheus (default), Graphite, and the M3 Query Engine.
 
-This quickstart uses Prometheus as the query engine, and you have access to [all the features of PromQL queries](https://prometheus.io/docs/prometheus/latest/querying/basics/).
+This quickstart uses Prometheus as the query engine, and you have access to [all the features of PromQL queries](https://prometheus.io/docs/v1.2/prometheus/latest/querying/basics/).
 
 To query metrics, use the _{{% apiendpoint %}}query_range_ endpoint with the following data in the request body, all fields are required:
 

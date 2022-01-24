@@ -7,14 +7,14 @@ weight: 4
 
 ## Prerequisites
 
-Before running M3 Query, you need to have at least [one M3DB node running](/v0.15.17/docs/quickstart).
+Before running M3 Query, you need to have at least [one M3DB node running](/docs/v0.15.17/quickstart).
 
 ## Configuring M3 Query
 
 To start M3 Query, you need a YAML configuration file that specifies the M3 nodes it connects to.
 
 {{% notice tip %}}
-You can use [this sample configuration file](https://github.com/m3db/m3/blob/master/src/query/config/m3query-local-etcd.yml) for experimenting with a local cluster that uses an embedded etcd cluster. [Read the etcd documentation](/v0.15.17/docs/operational_guide/etcd) for more details on running in production with an external etcd cluster.
+You can use [this sample configuration file](https://github.com/m3db/m3/blob/master/src/query/config/m3query-local-etcd.yml) for experimenting with a local cluster that uses an embedded etcd cluster. [Read the etcd documentation](/docs/v0.15.17/operational_guide/etcd) for more details on running in production with an external etcd cluster.
 {{% /notice %}}
 
 ## Running M3 Query

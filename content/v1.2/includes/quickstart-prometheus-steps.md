@@ -14,13 +14,13 @@ prometheus --config.file=prometheus.yml
 
 #### Start Node Exporters
 
-The three commands below simulate three point of sale (POS) devices reporting an hourly sales total for the POS. The node_exporter textfile collector uses[ _.prom_ files](https://prometheus.io/docs/instrumenting/exposition_formats/) for metrics, and only loads files from a directory, so this requires some extra steps for each node for this example.
+The three commands below simulate three point of sale (POS) devices reporting an hourly sales total for the POS. The node_exporter textfile collector uses[ _.prom_ files](https://prometheus.io/docs/v1.2/instrumenting/exposition_formats/) for metrics, and only loads files from a directory, so this requires some extra steps for each node for this example.
 
 {{< tabs name="node_exporters" >}}
 {{< tab name="Node 1" >}}
 
 {{% notice tip %}}
-Below is the text file for the first node, copy and paste it into a new _.prom_ file in a directory named _node-1_, or [download the file](/docs/includes/quickstart/node-1/metrics-1.prom) into that new folder.
+Below is the text file for the first node, copy and paste it into a new _.prom_ file in a directory named _node-1_, or [download the file](/docs/v1.2/includes/quickstart/node-1/metrics-1.prom) into that new folder.
 {{% /notice %}}
 
 {{< codeinclude file="docs/includes/quickstart/node-1/metrics-1.prom" language="text" >}}
@@ -33,7 +33,7 @@ Run node_exporter from its install location, passing the directory that contains
 {{< tab name="Node 2" >}}
 
 {{% notice tip %}}
-Below is the text file for the second node, copy and paste it into a new _.prom_ file in a directory named _node-2_, or [download the file](/docs/includes/quickstart/node-2/metrics-2.prom) into that new folder.
+Below is the text file for the second node, copy and paste it into a new _.prom_ file in a directory named _node-2_, or [download the file](/docs/v1.2/includes/quickstart/node-2/metrics-2.prom) into that new folder.
 {{% /notice %}}
 
 {{< codeinclude file="docs/includes/quickstart/node-2/metrics-2.prom" language="text" >}}
@@ -46,7 +46,7 @@ Run node_exporter from its install location, passing the directory that contains
 {{< tab name="Node 3" >}}
 
 {{% notice tip %}}
-Below is the text file for the second node, copy and paste it into a new _.prom_ file in a directory named _node-3_, or [download the file](/docs/includes/quickstart/node-3/metrics-3.prom) into that new folder.
+Below is the text file for the second node, copy and paste it into a new _.prom_ file in a directory named _node-3_, or [download the file](/docs/v1.2/includes/quickstart/node-3/metrics-3.prom) into that new folder.
 {{% /notice %}}
 
 {{< codeinclude file="docs/includes/quickstart/node-3/metrics-3.prom" language="text" >}}

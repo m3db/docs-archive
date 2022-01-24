@@ -67,6 +67,6 @@ spec:
 ```
 
 
-[api-namespaces]: /docs/operator/api#namespace
-[api-ns-options]: /docs/operator/api#namespaceoptions
+[api-namespaces]: /docs/v1.3/operator/api#namespace
+[api-ns-options]: /docs/v1.3/operator/api#namespaceoptions
 [m3db-namespaces]: https://docs.m3db.io/operational_guide/namespace_configuration/

@@ -229,10 +229,10 @@ spec:
     numInstances: 3
 ```
 
-[k8s-node-affinity]: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
-[k8s-taints]: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
-[k8s-anti-affinity]: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity
+[k8s-node-affinity]: https://kubernetes.io/docs/v1.3/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
+[k8s-taints]: https://kubernetes.io/docs/v1.3/concepts/configuration/taint-and-toleration/
+[k8s-anti-affinity]: https://kubernetes.io/docs/v1.3/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity
 [m3db-deployment]: https://docs.m3db.io/operational_guide/replication_and_deployment_in_zones/
 [m3db-isogroups]: https://docs.m3db.io/operational_guide/placement_configuration/#isolation-group
 [m3db-placement]: https://docs.m3db.io/operational_guide/placement/
-[node-affinity-term]: /docs/operator/api/#nodeaffinityterm
+[node-affinity-term]: /docs/v1.3/operator/api/#nodeaffinityterm

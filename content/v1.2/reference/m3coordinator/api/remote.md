@@ -35,7 +35,7 @@ Binary [snappy compressed](http://google.github.io/snappy/) Prometheus [WriteReq
 
 ### Available Tuning Params
 
-Refer [here](https://prometheus.io/docs/practices/remote_write/) for an up to date list of remote tuning parameters. 
+Refer [here](https://prometheus.io/docs/v1.2/practices/remote_write/) for an up to date list of remote tuning parameters. 
 
 ### Sample Call
 
@@ -75,7 +75,7 @@ promremotecli_log 2019/06/25 04:13:56 write success
 # quay.io/m3db/prometheus_remote_client_golang:v0.4.3
 ```
 
-For more details on querying data in PromQL that was written using this endpoint, see the [query API documentation](/docs/reference/m3query/api/query).
+For more details on querying data in PromQL that was written using this endpoint, see the [query API documentation](/docs/v1.2/reference/m3query/api/query).
 
 ## Remote Read
 
